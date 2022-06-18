@@ -1,0 +1,66 @@
+@import "~antd/dist/antd.css";
+
+@bgcolor: #f0f2f5;
+body {
+  font-size: 14px;
+  color: #333;
+  background: @bgcolor;
+}
+
+#app {
+  height: 100vh;
+}
+
+header {
+  height: 70px;
+  background: rgb(154, 35, 28);
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .logo {
+    height: 70px;
+  }
+
+  .right {
+    height: 40px;
+    .avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+    span {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    .dropdown {
+      color: #fcba03;
+    }
+  }
+}
+
+.aside {
+  background-color: rgb(154, 35, 28);
+  color: #fcba03;
+  width: 200px;
+  height: calc(100vh - 140px);
+}
+
+.contentBox {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  .content {
+    flex: 1;
+  }
+}
+
+footer {
+  height: 70px;
+  line-height: 70px;
+  font-size: 16px;
+  text-align: center;
+  color: #fcba03;
+  background: rgb(154, 35, 28);
+}
